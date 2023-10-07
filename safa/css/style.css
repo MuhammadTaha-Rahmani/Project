@@ -1,0 +1,13 @@
+body{
+    background-color:#222;
+}
+p{
+    color:#68ca68;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
+}
+input{
+    display: flex;
+    text-align: center;
+    padding: 3px 20px;
+}
