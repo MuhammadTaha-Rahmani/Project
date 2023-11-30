@@ -1,0 +1,41 @@
+body,
+.bg {
+    background: linear-gradient(
+        45deg,
+        rgba(3, 14, 33, 1) 36%,
+        rgba(19, 22, 60, 1) 67%,
+        rgba(22, 23, 65, 1) 71%,
+        rgba(24, 24, 68, 1) 75%,
+        rgba(27, 26, 74, 1) 78%,
+        rgba(40, 33, 95, 1) 84%,
+        rgba(51, 39, 113, 1) 91%,
+        rgba(61, 44, 130, 1) 100%
+    );
+}
+#line::after {
+    content: "";
+    display: block;
+    height: 7.5px;
+    background-color: #f8e7a1;
+    width: 10rem;
+    margin-bottom: 2rem;
+}
+.down {
+    transform: translateY(43px);
+}
+
+/* media screen */
+
+@media only screen and (max-width: 992px) {
+    .down {
+        transform: translateY(0) !important;
+    }
+}
+@media only screen and (max-width: 576px) {
+    #img {
+        width: 19rem;
+    }
+    a img {
+        width: 130px;
+    }
+}

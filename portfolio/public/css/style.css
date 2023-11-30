@@ -1,0 +1,43 @@
+i {
+    transition: all 0.7s;
+}
+a#main-link:hover > i {
+    margin-left: 2.5rem;
+    transition: all 0.7s linear;
+}
+.name::after {
+    content: "";
+    display: block;
+    height: 7.5px;
+    background-color: #f8e7a1;
+    width: 10rem;
+    margin-top: 2.5rem;
+}
+/* media screen */
+@media only screen and (max-width: 1200px) {
+    img {
+        width: 330px !important;
+    }
+    #t {
+        margin-bottom: 35.24px;
+    }
+}
+/* for x-sm */
+@media only screen and (max-width: 768px) {
+    #t {
+        margin-bottom: 35.24px;
+    }
+    img {
+        width: 290px !important;
+        margin-top: 2rem;
+    }
+    main > div:last-child {
+        margin-top: 3rem;
+    }
+    .name::after {
+        width: 100%;
+    }
+    main > div:first-child {
+        text-align: center;
+    }
+}
