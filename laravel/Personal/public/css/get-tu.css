@@ -1,0 +1,25 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+div ul li div p{
+    margin: 0;
+}
+.i{
+    font-size: 200%;
+    color: #f15060;
+}
+.c-b8{
+    color: #b8b8b8
+}
+a:hover{
+    transition: all 0.8s;
+    color: #f15060  !important;
+}
+
+@media screen and (max-width: 493px){
+    form div.col-6{
+        width: 100%;
+    }
+  }
+  a.text-white:hover{
+    transition: all 0.8s;
+    color: #111 !important;;
+}

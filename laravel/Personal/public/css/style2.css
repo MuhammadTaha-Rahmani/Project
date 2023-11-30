@@ -1,0 +1,28 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+.fs-7{
+    font-size: 0.9rem;
+}
+aside div{
+    background-color: #0f1012;
+}
+a.text-white:hover{
+    transition: all 1s;
+    color: #dc3545 !important;
+}
+.btn:hover{
+    transition: all 1s;
+}
+@media screen and (min-width:991px){
+    aside{
+      writing-mode: vertical-lr;
+    }
+}
+@media screen and (max-width:576px){
+    #msr{
+        width: 276px !important;
+    }
+}
+div.offcanvas-body a.text-white:hover{
+    transition: all 0.8s;
+    color: #111 !important;;
+}

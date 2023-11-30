@@ -1,0 +1,48 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    height: 125vh;
+}
+.about {
+
+    background-color: #f6f6f6;
+}
+a {
+    color: black;
+}
+.bg-like {
+    background-color: white;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    transition: all 1.3s;
+}
+.bg-like:hover {
+    transition: 1.3s;
+    background-color: #f15060;
+    color: white;
+}
+.bg-like:hover::after {
+    /* transition: 1.3s; */
+    content: "Read More";
+    color: white;
+}
+    .c-a2 {
+    color: #a2a2a2;
+}
+div ul li h1 {
+    color: #f150607a;
+}
+p {
+    font-size: 0.9rem;
+}
+a.text-secondary:hover{
+    transition: all 0.8s;
+    color: #f15060 !important;
+}
+a.text-white:hover{
+    transition: all 0.8s;
+    color: #111 !important;;
+}
