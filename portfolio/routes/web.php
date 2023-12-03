@@ -13,19 +13,19 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+// Route::pattern('id', '[0-9]+');
+Route::view("/" , "welcome" , ['name' => 'Taha']);
 
-Route::get('/', function () {
-    return view('welcome');
-});
-Route::get('/about', function () {
+Route::match(['get' , 'post'],'/about', function () {
     return view('about');
 });
-Route::get('/contact', function () {
+Route::get('/contact/{id}', function ($id) {
     return view('contact');
 });
 Route::get('/portfolio', function () {
     return view('portfolio');
 });
+// Route::redirect('/contact', '/about');
 
 Route::get('/dashboard', function () {
     return view('dashboard');

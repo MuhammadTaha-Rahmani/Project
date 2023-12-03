@@ -15,7 +15,7 @@
         <header class="container">
                     <nav class="d-flex align-items-center justify-content-between">
                             <div class="d-flex">
-                                <h1 class="mb-0 fs-2 h-color ff-mm">Taha</h1>
+                                <h1 class="mb-0 fs-2 h-color ff-mm">{{$name}}</h1>
                                 <span class="dot"></span>
                             </div>
                             <ul class="list-unstyled d-none d-md-flex mb-0">
