@@ -1,6 +1,7 @@
 @extends('layouts.main');
 @section('link' , 'css/style.css');
 @section('main')
+    {{--<x-alert type="danger" message="goodnight"/>--}}
         <main class="container c-mt">
                     <div class="row justify-content-center justify-content-lg-between">
                         <div class="col-lg-9 col-md-12 row">
