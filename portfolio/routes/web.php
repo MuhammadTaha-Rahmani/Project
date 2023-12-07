@@ -14,12 +14,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 // Route::pattern('id', '[0-9]+');
-Route::view("/" , "welcome" , ['name' => 'Taha']);
+Route::view("/" , "welcome");
 
 Route::match(['get' , 'post'],'/about', function () {
     return view('about');
 });
-Route::get('/contact/{id}', function ($id) {
+Route::get('/contact/', function (){
     return view('contact');
 });
 Route::get('/portfolio', function () {
