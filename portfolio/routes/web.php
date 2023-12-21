@@ -1,7 +1,9 @@
 <?php
 
-use App\Http\Controllers\ProfileController;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ProfileController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,8 +21,27 @@ Route::view("/" , "welcome");
 Route::match(['get' , 'post'],'/about', function () {
     return view('about');
 });
-Route::get('/contact/', function (){
+Route::get('/contact', function (){
     return view('contact');
+});
+Route::get('/ali' , function () {
+    DB::table('contact')->where('id' , 1)->delete();
+});
+Route::post('/section', function (Request $request){
+    
+    DB::table('contact')->insert([
+        'email' => $request->email,
+        'phoneNumber' =>$request->phoneNumber, 
+        'firstName' =>$request->firstName, 
+        'lastName' =>$request->lastName, 
+        'message' =>$request->message
+    ]);
+    return '<ul>'
+    .'<li>'.$request->phoneNumber.'</li>'.
+    '<li>'.$request->message.'</li>'.
+    '<li>'.$request->firstName.'</li>'.
+    '<li>'.$request->lastName.'</li>'.
+    '</ul>';
 });
 Route::get('/portfolio', function () {
     return view('portfolio');
