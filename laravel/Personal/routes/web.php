@@ -1,7 +1,10 @@
 <?php
 
-use App\Http\Controllers\ProfileController;
+use App\Models\Message;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ProfileController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,6 +28,16 @@ Route::get('/portfolio', function () {
 });
 Route::get('/contact', function () {
     return view('contact');
+});
+Route::post('/send_message',function (Request $request) {
+    $message = new Message;
+    $message->first_name = $request->first_name;
+    $message->last_name = $request->last_name;
+    $message->email = $request->email;
+    $message->phone_num = $request->phone_num;
+    $message->messege = $request->message;
+    $message->save();
+    return redirect('/contact');
 });
 Route::get('/works', function () {
     return view('works');

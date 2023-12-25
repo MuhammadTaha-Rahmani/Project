@@ -48,7 +48,8 @@
                 </ul>
             </div>
         </div>
-        <form style="background-color: #f7f7f7;" class="col-lg-6  mt-4 mt-md-0 row p-3 mb-3 mb-lg-0">
+        <form action="/send_message" method="post" style="background-color: #f7f7f7;" class="col-lg-6  mt-4 mt-md-0 row p-3 mb-3 mb-lg-0">
+        @csrf
             <div class="col-12">
                 <label for="subject" class="form lable">How Can We Help?</label>
                 <select id="subject" class="form-select" aria-label="Default select example">
@@ -60,29 +61,27 @@
             </div>
             <div class="w-100"></div>
             <div class="col-6">
-                <label for="first name" class="form-label">First Name</label>
-                <input id="first name" type="text" class="form-control" placeholder="type your First Name" required>
+                <label for="first_name" class="form-label">First Name</label>
+                <input id="first_name" name="first_name" type="text" class="form-control" placeholder="type your First Name" required>
             </div>
             <div class="col-6">
                 <label for="last name" class="form-label">Last Name</label>
-                <input id="last name" type="text" class="form-control" placeholder="Type Your Last Name" required>
+                <input name="last_name" id="last name" type="text" class="form-control" placeholder="Type Your Last Name" required>
             </div>
             <div class="col-6">
                 <label for="email" class="form-label">Email</label>
-                <input id="email" type="text" class="form-control" placeholder="Type Your Email">
+                <input name="email" id="email" type="text" class="form-control" placeholder="Type Your Email">
             </div>
             <div class="col-6">
                 <label for="phone number" class="form-label">Phone Number</label>
-                <input id="phone number" type="text" class="form-control" placeholder="Type Your Phone Number" required>
+                <input name="phone_num" id="phone number" type="text" class="form-control" placeholder="Type Your Phone Number" required>
             </div>
             <div class="col-12">
                 <label for="message" class="form-label">Message</label>
-                <textarea id="message" type="text" style="height: 8rem;" class="form-control" placeholder="Enter message" required></textarea>
+                <textarea name="message" id="message" type="text" style="height: 8rem;" class="form-control" placeholder="Enter message" required></textarea>
             </div>
             <div class="mt-4">
-             <a href="#!"class="text-decoration-none btn btn-danger p-lg-2">
-                 Get A Quote <i class="bi bi-arrow-right ms-2"></i>
-             </a>                
+             <input type="submit" value="Send" class="text-decoration-none btn btn-danger p-lg-2">
             </div>
         </form>
         </div>
