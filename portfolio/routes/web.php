@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Messages;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Route;
@@ -29,19 +30,13 @@ Route::get('/ali' , function () {
 });
 Route::post('/section', function (Request $request){
     
-    DB::table('contact')->insert([
-        'email' => $request->email,
-        'phoneNumber' =>$request->phoneNumber, 
-        'firstName' =>$request->firstName, 
-        'lastName' =>$request->lastName, 
-        'message' =>$request->message
-    ]);
-    return '<ul>'
-    .'<li>'.$request->phoneNumber.'</li>'.
-    '<li>'.$request->message.'</li>'.
-    '<li>'.$request->firstName.'</li>'.
-    '<li>'.$request->lastName.'</li>'.
-    '</ul>';
+    $messeges = new Messages;
+    $messeges->firstName = $request->firstName;
+    $messeges->lastName = $request->lastName;
+    $messeges->phoneNumber = $request->phoneNumber;
+    $messeges->message = $request->message;
+    $messeges->save();
+    return redirect('/contact');
 });
 Route::get('/portfolio', function () {
     return view('portfolio');
