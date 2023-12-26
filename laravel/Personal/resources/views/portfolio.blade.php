@@ -1,6 +1,7 @@
 @extends('layouts.header')
 @section('tilte' , 'Portfolio')
 @section('link_css' , 'port.css')
+@section('link_css_home' , 'card-2.css')
 @section('safa_bg_text' , 'bg-black text-white')
 @section('home_color' , 'text-secondary')
 @section('about_color' , 'text-secondary')
@@ -17,9 +18,11 @@
 @section('name_link_4' , 'contact')
 @section('head')
             <main class="container">
-                <img class="mb-3" src="../assets/mountain2.PNG" alt="nothing" />
+             <div class = "text-center">
+             <img class="mb-3" src="../assets/mountain2.PNG" alt="nothing" />
             <p>PORTFOLIO</p>
             <h1>My <span class="text-danger">Portfolio</span></h1>
+             </div>
             <div class="d-flex justify-content-evenly flex-wrap mb-3">
                 <div class="card mt-5">
                     <h2 class="text-black">HTML</h2>
@@ -44,7 +47,7 @@
             </div>
 
             <div class="mt-5">
-                <h3 id="html-home" class="html-color rounded-3 w-50 mx-auto">
+                <h3 id="html-home" class="html-color rounded-3 w-50 mx-auto text-center">
                     html
                 </h3>
                 <div
@@ -117,7 +120,7 @@
                 </div>
             </div>
             <div class="mt-5">
-                <h3 id="css-home" class="css-color rounded-3 w-50 mx-auto">
+                <h3 id="css-home" class="css-color rounded-3 w-50 mx-auto text-center">
                     css
                 </h3>
                 <div
@@ -190,7 +193,7 @@
                 </div>
             </div>
             <div class="mt-5">
-                <h3 id="js-home" class="js-color rounded-3 w-50 mx-auto">js</h3>
+                <h3 id="js-home" class="js-color rounded-3 w-50 mx-auto text-center">js</h3>
                 <div
                     class="glass mt-5 w-75 mx-auto flex-wrap d-flex justify-content-evenly"
                 >
@@ -261,7 +264,7 @@
                 </div>
             </div>
             <div class="mt-5">
-                <h3 id="php-home" class="php-color rounded-3 w-50 mx-auto">
+                <h3 id="php-home" class="php-color rounded-3 w-50 mx-auto text-center">
                     php
                 </h3>
                 <div
