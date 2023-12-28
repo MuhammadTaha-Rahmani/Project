@@ -40,10 +40,10 @@
                     </div>
                     <div class="d-flex p-2 mt-3 justify-content-center">
                         <p class="text-white mx-lg-0 my-0 me-2">Follow</p>
-                        <a class="text-decoration-none text-white me-2 me-lg-0 mt-lg-2" href="#"><i class="bi bi-twitter"></i></a>
+                        <a class="text-decoration-none text-white me-2 me-lg-0 mt-lg-2" target = "_blank" href="https://www.github.com/MuhammadSafa-Rahmani"><i class="bi bi-github"></i></a>
                         <a class="text-decoration-none text-white me-2 me-lg-0 mt-lg-2" href="#"><i class="bi bi-behance"></i></a>
                         <a class="text-decoration-none text-white me-2 me-lg-0 mt-lg-2" href="assets/Its Mine.pdf"><i class="bi bi-facebook"></i></a>
-                        <a class="text-decoration-none text-white mt-lg-2" href="assets/msr pa.pdf"><i class="bi bi-youtube"></i></a>
+                        <a class="text-decoration-none text-white mt-lg-2" target = "_blank" href="https://www.linkedin.com"><i class="bi bi-linkedin"></i></a>
                     </div>
                 </aside>
             </div>

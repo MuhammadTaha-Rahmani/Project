@@ -103,9 +103,9 @@
                       <hr class="text-white">
                       <ul class="list-unstyled row">
                         <li class="col-6"><a class="text-white text-decoration-none" href="#!"><i class="bi bi-facebook me-2"></i>Facebook</a></li>
-                        <li class="col-6"><a class="text-white text-decoration-none" href="#!"><i class="bi bi-linkedin me-2"></i>Linkedin</a></li>
-                        <li class="col-6"><a class="text-white text-decoration-none" href="#!"><i class="bi bi-instagram me-2"></i>Instagram</a></li>
-                        <li class="col-6"><a class="text-white text-decoration-none" href="#!"><i class="bi bi-github me-2"></i>Github</a></li>
+                        <li class="col-6"><a class="text-white text-decoration-none" target = "_blank" href="https://www.linkedin.com"><i class="bi bi-linkedin me-2"></i>Linkedin</a></li>
+                        <li class="col-6"><a class="text-white text-decoration-none" href="#!"><i class="bi bi-behance me-2"></i>Behance</a></li>
+                        <li class="col-6"><a class="text-white text-decoration-none" target = "_blank" href="https://www.github.com/MuhammadSafa-Rahmani"><i class="bi bi-github me-2"></i>Github</a></li>
                       </ul>
                       <hr class="text-white">
                       <div class="input__container mt-5">
