@@ -48,7 +48,7 @@
                 </ul>
             </div>
         </div>
-        <form action="/send_message" method="post" style="background-color: #f7f7f7;" class="col-lg-6  mt-4 mt-md-0 row p-3 mb-3 mb-lg-0">
+        <form action="/contact" method="post" style="background-color: #f7f7f7;" class="col-lg-6  mt-4 mt-md-0 row p-3 mb-3 mb-lg-0">
         @csrf
             <div class="col-12">
                 <label for="subject" class="form lable">How Can We Help?</label>
